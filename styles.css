@@ -1,43 +1,84 @@
-/* Modern and Clean Look */
+:root {
+    --font-family: 'Arial', sans-serif;
+    --header-font: 1.5rem;
+    --p-font: 1.25rem;
+}
+
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: var(--font-family);
     line-height: 1.6;
     background: #f4f4f4;
     margin: 0 0 1rem 0;
     padding: 0;
 }
 
+.container-fluid {
+    text-align: center;
+}
+
+.img-div {
+    margin-left: 8.5%;
+}
+
+.img-home {
+    margin-top: 1.5%;  
+    margin-left: 8.5%;
+}
+
+.ul-img {
+    display: flex;
+}
+
+.img-fluid {
+    border-radius: 5rem;
+    height: 20rem;
+    width: 35rem;
+}
+
+.figure-img {
+    flex-basis: 42%;
+    text-align: center;
+}
+
+.navbar-brand {
+    color: #333;
+}
+
+.nav-link:hover {
+    color: #333;
+}
+
 nav {
+    margin-top: -2rem;
     background: #ffffff;
     box-shadow: 0px 0px .15rem #212529;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 nav a.navbar-brand, nav .navbar-nav .nav-link {
     color: #333;
-}
-
-nav .navbar-brand {
-    flex-basis: 10%;
-    text-align: center;
+    width: 0%;
 }
 
 nav ul{
-    flex-basis: 65%;
-    text-align: center;
-    
+    flex-basis: 74.9%;
 }
+
 nav ul li {
-    flex-basis: 12.5%;
-    text-align: center;
-    font-size: 1.25rem;
+    flex-basis: 15%;
+    font-size: var(--p-font);
+}
+
+.li-font {
+    font-size: var(--p-font);
 }
 
 .container {
-    max-width: 90rem;
+    max-width: 100rem;
 }
 
-/* Adjustments for Main and Aside Sections */
-main section, main aside {
+main section, main aside, .table-div {
     padding: 20px;
     background: #ffffff;
     box-shadow: 0px 0px .15rem #212529;
@@ -47,7 +88,7 @@ section h2 {
     font: bolder;
 }
 .card-body, aside h3 {
-    font-size: 1.5rem;
+    font-size: var(--header-font);
 }
 
 aside {
@@ -58,3 +99,51 @@ aside h3 {
     padding-top: .5rem;
 }
 
+.table, .ref-font {
+    font-size: var(--header-font);
+}
+
+.ref-font {
+    margin: 2.25rem;
+}
+
+.table-div {
+    margin-top: 10rem;
+}
+
+.form-div {
+    margin-left: 2rem;
+    float: left;
+    display: flex;
+}
+
+p {
+    font-size: var(--p-font);
+}
+
+form label {
+    margin-left: 2rem;
+    margin-right: .5rem;
+}
+
+button {
+    margin-left: 2rem;
+}
+
+#submit {
+    position: absolute;
+    top: 10rem;
+    right: 27rem;
+    z-index: 1;
+}
+
+header {
+    height: 0rem;
+}
+
+.navbar-brand {
+    position: relative;
+    left: -47rem;
+    bottom: 0.25rem;
+    z-index: 1;
+}

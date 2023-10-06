@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Data, References | Florida</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="text-black text-center py-3">
+        <a class="navbar-brand" href="home.html">Florida</a>
+    </header>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tallahassee.html">Tallahassee</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tampa.html">Tampa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="miami.html">Miami</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="info.html">Info</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="form-div">
+        <p>Have questions regarding our data sources?</p>
+        <form class="form" autocomplete="on">
+            <label for="firstName">First name</label>
+            <input placeholder="John" type="text" name="firstName" id="firstName" autocomplete="given-name" required>
+        
+            <label for="lastName">Last name</label>
+            <input placeholder="Smith" type="text" name="lastName" id="lastName" autocomplete="family-name" required>
+        
+            <br>
+            <br>
+        
+            <label for="email">Email</label>
+            <input placeholder="john-smith@example.com" type="email" name="email" id="email" autocomplete="email" required>
+
+            <label for="email">Confirm email</label>
+            <input placeholder="john-smith@example.com" type="email" name="email" id="confirmEmail" autocomplete="off" required>
+        
+            <label for="question">Question</label>
+            <input placeholder="Why did you choose your data sources over others?" type="text" name="question" id="question" autocomplete="off" required>
+        
+            <button type="submit" id="submit">Submit question.</button>
+        </form>        
+    </div>
+    
+    <main class="container mt-6 text-center col-lg-12 card-header table-div">
+        <caption class="caption">
+            <h3>Data Source and References</h3>
+        </caption>
+        <table class="table table-striped">
+            <tr class="font-weight-bold">
+                <td>City</td>
+                <td>Topic</td>
+                <td>Data Source</td>
+            </tr>
+            <tr>
+                <td>Tallahassee</td>
+                <td id="population-tallahassee">Population</td>
+                <td>
+                    <a target="_blank" href="https://www.census.gov/quickfacts/fact/table/FL,tallahasseecityflorida/INC110221">Census.gov</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Tallahassee</td>
+                <td id="incorporation-tallahassee">Incorporation Date</td>
+                <td>
+                    <a target="_blank" href="https://en.wikipedia.org/wiki/History_of_Tallahassee,_Florida#Founding_of_Tallahassee">Wikipedia.com</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Tallahassee</td>
+                <td id="region-tallahassee">Region</td>
+                <td>
+                    <a target="_blank" href="https://www.britannica.com/place/Tallahassee">Britannica.com</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Tallahassee</td>
+                <td id="classification-tallahassee">Classification</td>
+                <td>
+                    <a target="_blank" href="https://en.wikipedia.org/wiki/History_of_Tallahassee,_Florida">Wikipedia.com</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Tallahassee</td>
+                <td id="income-tallahassee">Income Level: Capital & State</td>
+                <td>
+                    <a target="_blank" href="https://www.census.gov/quickfacts/fact/table/tallahasseecityflorida/INC110221">Tallahassee</a>
+                    <br>
+                    <a target="_blank" href="https://www.census.gov/quickfacts/fact/table/FL/INC110221">Florida</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Tampa</td>
+                <td id="population-tampa">Population</td>
+                <td>
+                    <a target="_blank" href="https://www.census.gov/quickfacts/fact/table/FL,tampacityflorida/INC110221">Census.gov</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Tampa</td>
+                <td id="incorporation-tampa">Incorporation Date</td>
+                <td>
+                    <a target="_blank" href="https://en.wikipedia.org/wiki/History_of_Tampa,_Florida#Founding_of_Tampa">Wikipedia.com</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Tampa</td>
+                <td id="region-tampa">Region</td>
+                <td>
+                    <a target="_blank" href="https://www.britannica.com/place/Tampa">Britannica.com</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Tampa</td>
+                <td id="classification-tampa">Classification</td>
+                <td>
+                    <a target="_blank" href="https://en.wikipedia.org/wiki/History_of_Tampa,_Florida">Wikipedia.com</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Tampa</td>
+                <td id="income-tampa">Income Level: Capital & State</td>
+                <td>
+                    <a target="_blank" href="https://www.census.gov/quickfacts/fact/table/tampacityflorida/INC110221">Tampa</a>
+                    <br>
+                    <a target="_blank" href="https://www.census.gov/quickfacts/fact/table/FL/INC110221">Florida</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Miami</td>
+                <td id="population-miami">Population</td>
+                <td>
+                    <a target="_blank" href="https://www.census.gov/quickfacts/fact/table/FL,miamicityflorida/INC110221">Census.gov</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Miami</td>
+                <td id="incorporation-miami">Incorporation Date</td>
+                <td>
+                    <a target="_blank" href="https://en.wikipedia.org/wiki/History_of_Miami,_Florida#Founding_of_Miami">Wikipedia.com</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Miami</td>
+                <td id="region-miami">Region</td>
+                <td>
+                    <a target="_blank" href="https://www.britannica.com/place/Miami-Florida">Britannica.com</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Miami</td>
+                <td id="classification-miami">Classification</td>
+                <td>
+                    <a target="_blank" href="https://en.wikipedia.org/wiki/History_of_Miami,_Florida">Wikipedia.com</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Miami</td>
+                <td id="income-miami">Income Level: Capital & State</td>
+                <td>
+                    <a target="_blank" href="https://www.census.gov/quickfacts/fact/table/miamicityflorida/INC110221">Miami</a>
+                    <br>
+                    <a target="_blank" href="https://www.census.gov/quickfacts/fact/table/FL/INC110221">Florida</a>
+                </td>
+            </tr>
+        </table>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
